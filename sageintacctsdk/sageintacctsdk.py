@@ -45,7 +45,7 @@ class SageIntacctSDK:
         self.departments = Departments()
         self.charge_card_accounts = ChargeCardAccounts()
         self.charge_card_transactions = ChargeCardTransactions()
-        self.charge_card_transactions = ChargeCardTransactionEntry()
+        self.charge_card_transaction_entry = ChargeCardTransactionEntry()
         self.customers = Customers()
         self.items = Items()
         self.ap_payments = APPayments()
