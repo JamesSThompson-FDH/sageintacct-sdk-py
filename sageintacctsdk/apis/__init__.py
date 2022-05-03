@@ -30,6 +30,7 @@ from .expense_payment_types import ExpensePaymentTypes
 from .location_entities import LocationEntities
 from .tax_details import TaxDetails
 from .gl_detail import GLDetail
+from .gl_entries import GLEntries
 from .classes import Classes
 from .journal_entries import JournalEntries
 
@@ -63,6 +64,7 @@ __all__ = [
     'LocationEntities',
     'TaxDetails',
     'GLDetail',
+    'GLEntries',
     'Classes',
     'JournalEntries'
 ]
