@@ -15,6 +15,7 @@ from .projects import Projects
 from .departments import Departments
 from .charge_card_accounts import ChargeCardAccounts
 from .charge_card_transactions import ChargeCardTransactions
+from .charge_card_transaction_entry import ChargeCardTransactionEntry
 from .customers import Customers
 from .items import Items
 from .ap_payments import APPayments
@@ -47,6 +48,7 @@ __all__ = [
     'Departments',
     'ChargeCardAccounts',
     'ChargeCardTransactions',
+    'ChargeCardTransactionEntry',
     'Customers',
     'Items',
     'APPayments',
