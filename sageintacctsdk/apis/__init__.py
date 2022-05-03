@@ -31,6 +31,7 @@ from .location_entities import LocationEntities
 from .tax_details import TaxDetails
 from .gl_detail import GLDetail
 from .gl_entries import GLEntries
+from .gl_account_grp_heir import AccountGrpHeir
 from .classes import Classes
 from .journal_entries import JournalEntries
 
@@ -65,6 +66,7 @@ __all__ = [
     'TaxDetails',
     'GLDetail',
     'GLEntries',
+    'AccountGrpHeir',
     'Classes',
     'JournalEntries'
 ]
