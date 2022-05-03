@@ -1,5 +1,5 @@
-# Sage Intacct SDK
-Python SDK to access Sage Intacct web services
+# Sage Intacct SDK - FHD Modifications
+Python SDK to access Sage Intacct web services - 
 
 ## Installation
 
