@@ -5,7 +5,7 @@ from .apis import ApiBase, Contacts, Locations, Employees, Accounts, ExpenseType
     Vendors, Bills, Projects, Departments, ChargeCardAccounts, ChargeCardTransactions, Customers, Items,\
     APPayments, Reimbursements, CheckingAccounts, SavingsAccounts, Tasks, ExpensePaymentTypes, Dimensions,\
     DimensionValues, LocationEntities, ARInvoices, TaxDetails, GLDetail, Classes, JournalEntries,\
-    ChargeCardTransactionEntry, GLEntries
+    ChargeCardTransactionEntry, GLEntries, GLAcctGrpHier, GLBudgetItem
 
 
 class SageIntacctSDK:
@@ -62,6 +62,8 @@ class SageIntacctSDK:
         self.tax_details = TaxDetails()
         self.gl_detail = GLDetail()
         self.gl_entries = GLEntries()
+        self.gl_acct_grp_hier = GLAcctGrpHier()
+        self.gl_budget_item = GLBudgetItem()
         self.classes = Classes()
         self.journal_entries = JournalEntries()
         self.update_sender_id()
@@ -102,6 +104,8 @@ class SageIntacctSDK:
         self.tax_details.set_sender_id(self.__sender_id)
         self.gl_detail.set_sender_id(self.__sender_id)
         self.gl_entries.set_sender_id(self.__sender_id)
+        self.gl_acct_grp_hier.set_sender_id(self.__sender_id)
+        self.gl_budget_item.set_sender_id(self.__sender_id)
         self.classes.set_sender_id(self.__sender_id)
         self.journal_entries.set_sender_id(self.__sender_id)
 
@@ -139,6 +143,8 @@ class SageIntacctSDK:
         self.tax_details.set_sender_password(self.__sender_password)
         self.gl_detail.set_sender_password(self.__sender_password)
         self.gl_entries.set_sender_password(self.__sender_password)
+        self.gl_acct_grp_hier.set_sender_password(self.__sender_password)
+        self.gl_budget_item.set_sender_password(self.__sender_password)
         self.classes.set_sender_password(self.__sender_password)
         self.journal_entries.set_sender_password(self.__sender_password)
 
@@ -178,5 +184,7 @@ class SageIntacctSDK:
         self.tax_details.set_session_id(self.__session_id)
         self.gl_detail.set_session_id(self.__session_id)
         self.gl_entries.set_session_id(self.__session_id)
+        self.gl_acct_grp_hier.set_session_id(self.__session_id)
+        self.gl_budget_item.set_session_id(self.__session_id)
         self.classes.set_session_id(self.__session_id)
         self.journal_entries.set_session_id(self.__session_id)
