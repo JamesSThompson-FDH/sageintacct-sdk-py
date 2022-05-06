@@ -892,7 +892,7 @@ dimensions_fields_mapping = {
         'MEGAENTITYNAME'
     ],
     'GLDETAIL': [
-        'recordno,
+        'recordno',
         'batchkey',
         'batch_date',
         'batch_title',
