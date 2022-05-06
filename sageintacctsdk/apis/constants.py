@@ -988,7 +988,7 @@ dimensions_fields_mapping = {
         'RECORD_URL'
     ],
     'GLENTRY': [
-        'recordno,
+        'recordno',
         'batchno',
         'userno',
         'line_no',
