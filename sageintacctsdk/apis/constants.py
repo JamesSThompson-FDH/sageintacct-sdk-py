@@ -183,7 +183,7 @@ dimensions_fields_mapping = {
         'accounttitle',
         'accountnormalbalance',
         'accounttype',
-        'accountlocationkey
+        'accountlocationkey'
     ],
     'CCTRANSACTIONENTRY': [
         'recordno',
