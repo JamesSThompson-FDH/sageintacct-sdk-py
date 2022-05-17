@@ -908,7 +908,8 @@ dimensions_fields_mapping = {
         'CLASSNAME',
         'EMPLOYEEDIMKEY',
         'EMPLOYEEID',
-        'EMPLOYEENAME'
+        'EMPLOYEENAME',
+        'RECORD_URL'
     ],
     'CLASS': [
         'RECORDNO',
@@ -936,8 +937,13 @@ dimensions_fields_mapping = {
         'ENTRY_DATE',
         'AMOUNT',
         'TRX_AMOUNT',
+        'BATCH_NUMBER',
+        'BATCH_DATE',
+        'BATCHTITLE',
         'ACCOUNTKEY',
         'ACCOUNTNO',
+        'ACCOUNTTITLE',
+        'STATISTICAL',
         'DEPARTMENTKEY',
         'DEPARTMENT',
         'DEPARTMENTTITLE',
@@ -981,7 +987,7 @@ dimensions_fields_mapping = {
         'EMPLOYEEDIMKEY',
         'EMPLOYEEID',
         'EMPLOYEENAME',
-        'ASSETID'
+        'RECORD_URL'
     ],
     'CCTRANSACTIONENTRY': [
         'RECORDNO',
@@ -1064,3 +1070,4 @@ dimensions_fields_mapping = {
         'TAXSOLUTIONID'
     ]
 }
+
