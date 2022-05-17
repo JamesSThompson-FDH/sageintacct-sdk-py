@@ -8,7 +8,7 @@ This project requires [Python 3+](https://www.python.org/downloads/) and [Reques
 1. Download this project and use it (copy it in your project, etc).
 2. Install it from [pip](https://pypi.org).
         
-        $ pip install -e git+https://github.com/JamesSThompson-FDH/sageintacct-sdk-py.git@0.0.7#egg=sageintacctsdk
+        $ pip install -e git+https://github.com/JamesSThompson-FDH/sageintacct-sdk-py.git@v0.1.7fdh#egg=sageintacctsdk
 
 ## Usage
 
