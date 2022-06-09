@@ -171,6 +171,7 @@ dimensions_fields_mapping = {
         'MEGAENTITYNAME'
     ],
     'GLACCTGRPHIERARCHY': [
+        'RECORDNO',
         'GLACCTGRPKEY',
         'GLACCTGRPNAME',
         'GLACCTGRPTITLE',
@@ -658,7 +659,8 @@ dimensions_fields_mapping = {
         'SSN',
         'EMPPOSITIONKEY',
         'EMPPOSITIONID',
-        'EMPPOSITIONNAME'
+        'EMPPOSITIONNAME',
+        'RECORD_URL'
     ],
     'LOCATIONENTITY': [
         'RECORDNO',
