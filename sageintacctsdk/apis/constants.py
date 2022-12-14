@@ -1070,6 +1070,11 @@ dimensions_fields_mapping = {
         'BASELOCATION_NO',
         'STATE',
         'TAXSOLUTIONID'
+    ],    
+    'AUDITHISTORY': [
+        'OBJECTTYPE',
+        'SOURCE',
+        'USERID'
     ]
 }
 

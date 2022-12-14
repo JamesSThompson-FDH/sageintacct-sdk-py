@@ -35,6 +35,7 @@ from .gl_acct_grp_hier import GLAcctGrpHier
 from .gl_budget_item import GLBudgetItem
 from .classes import Classes
 from .journal_entries import JournalEntries
+from .audit_history import AuditHistory
 
 __all__ = [
     'ApiBase',
@@ -70,5 +71,6 @@ __all__ = [
     'GLAcctGrpHier',
     'GLBudgetItem',
     'Classes',
-    'JournalEntries'
+    'JournalEntries',
+    'AuditHistory'
 ]
