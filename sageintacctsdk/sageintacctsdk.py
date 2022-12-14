@@ -5,9 +5,8 @@ from .apis import ApiBase, Contacts, Locations, Employees, Accounts, ExpenseType
     Vendors, Bills, Projects, Departments, ChargeCardAccounts, ChargeCardTransactions, Customers, Items,\
     APPayments, Reimbursements, CheckingAccounts, SavingsAccounts, Tasks, ExpensePaymentTypes, Dimensions,\
     DimensionValues, LocationEntities, ARInvoices, TaxDetails, GLDetail, Classes, JournalEntries,\
-    ChargeCardTransactionEntry, GLEntries, GLAcctGrpHier, GLBudgetItem
-
-
+    ChargeCardTransactionEntry, GLEntries, GLAcctGrpHier, GLBudgetItem, AuditHistory
+  
 class SageIntacctSDK:
     """
     Sage Intacct SDK
