@@ -69,7 +69,7 @@ class SageIntacctSDK:
         self.update_sender_id()
         self.update_sender_password()
         self.update_session_id()
-		self.audit_history = AuditHistory()
+	self.audit_history = AuditHistory()
 
 
     def update_sender_id(self):
@@ -110,7 +110,7 @@ class SageIntacctSDK:
         self.gl_budget_item.set_sender_id(self.__sender_id)
         self.classes.set_sender_id(self.__sender_id)
         self.journal_entries.set_sender_id(self.__sender_id)
-		self.audit_history.set_sender_id(self.__sender_id)
+	self.audit_history.set_sender_id(self.__sender_id)
 
     def update_sender_password(self):
         """
@@ -150,7 +150,7 @@ class SageIntacctSDK:
         self.gl_budget_item.set_sender_password(self.__sender_password)
         self.classes.set_sender_password(self.__sender_password)
         self.journal_entries.set_sender_password(self.__sender_password)
-		self.audit_history.set_sender_password(self.__sender_password)
+	self.audit_history.set_sender_password(self.__sender_password)
 
 
     def update_session_id(self):
@@ -193,4 +193,4 @@ class SageIntacctSDK:
         self.gl_budget_item.set_session_id(self.__session_id)
         self.classes.set_session_id(self.__session_id)
         self.journal_entries.set_session_id(self.__session_id)
-		self.audit_history.set_session_id(self.__session_id)
+	self.audit_history.set_session_id(self.__session_id)
