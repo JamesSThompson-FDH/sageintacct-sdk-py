@@ -65,10 +65,11 @@ class SageIntacctSDK:
         self.gl_budget_item = GLBudgetItem()
         self.classes = Classes()
         self.journal_entries = JournalEntries()
+        self.audit_history = AuditHistory()
         self.update_sender_id()
         self.update_sender_password()
         self.update_session_id()
-        self.audit_history = AuditHistory()
+
 
 
     def update_sender_id(self):
@@ -110,6 +111,7 @@ class SageIntacctSDK:
         self.classes.set_sender_id(self.__sender_id)
         self.journal_entries.set_sender_id(self.__sender_id)
         self.audit_history.set_sender_id(self.__sender_id)
+
 
     def update_sender_password(self):
         """
