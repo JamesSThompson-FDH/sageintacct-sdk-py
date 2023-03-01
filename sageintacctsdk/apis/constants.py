@@ -1121,6 +1121,7 @@ dimensions_fields_mapping = {
 	'RECORD_URL'
     ],
     'OTHERRECEIPTSENTRY': [
+	'RECORDNO',
 	'RECORDKEY',
 	'RECORDTYPE',
 	'ACCOUNTKEY',
