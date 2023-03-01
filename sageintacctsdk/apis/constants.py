@@ -1120,7 +1120,7 @@ dimensions_fields_mapping = {
 	'MEGAENTITYNAME',
 	'RECORD_URL'
     ],
-    'OTHERRECEIPTENTRY': [
+    'OTHERRECEIPTSENTRY': [
 	'RECORDKEY',
 	'RECORDTYPE',
 	'ACCOUNTKEY',
