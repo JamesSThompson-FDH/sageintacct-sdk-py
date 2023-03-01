@@ -165,9 +165,25 @@ class ApiBase:
         body = xmltodict.unparse(dict_body)
 
         response = requests.post(api_url, headers=api_headers, data=body.encode('utf-8'))
+        #print("body")
+        #print(body)
+
+        #print("api_url")
+        #print(api_url)
+
+        #print("dict_body")
+        #print(dict_body)
+
+        #print("response")
+        #print(response)
 
         parsed_xml = xmltodict.parse(response.text, force_list={self.__dimension})
+        #print("parsed_xml")
+        #print(parsed_xml)
+
         parsed_response = json.loads(json.dumps(parsed_xml))
+        #print("parsed_response")
+        #print(parsed_response)
 
         if response.status_code == 200:
             if parsed_response['response']['control']['status'] == 'success':
@@ -213,6 +229,8 @@ class ApiBase:
         raise SageIntacctSDKError('Error: {0}'.format(parsed_response))
 
     def format_and_send_request(self, data: Dict):
+        print("format and send request")
+        print(data)
         """Format data accordingly to convert them to xml.
 
         Parameters:
@@ -248,12 +266,15 @@ class ApiBase:
                 }
             }
         }
+        #print('dict_body')
+        #print(dict_body)
 
         response = self.__post_request(dict_body, self.__api_url)
         return response['result']
 
     def post(self, data: Dict):
-        if self.__dimension in ('CCTRANSACTION', 'EPPAYMENT'):
+        if self.__dimension in ('CCTRANSACTION', 'EPPAYMENT', 'EEXPENSES', 'OTHERRECEIPTS'):
+        #if self.__dimension in ('CCTRANSACTION', 'EPPAYMENT', 'EEXPENSES'):
             return self.__construct_post_legacy_payload(data)
 
         return self.__construct_post_payload(data)
@@ -472,3 +493,4 @@ class ApiBase:
 
         data = {'lookup': {'object': self.__dimension}}
         return self.format_and_send_request(data)['data']
+
