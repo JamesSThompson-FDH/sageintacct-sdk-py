@@ -1173,4 +1173,4 @@ dimensions_fields_mapping = {
 	'EMPLOYEENAME',
 	'RECORD_URL'
     ]
-
+}
