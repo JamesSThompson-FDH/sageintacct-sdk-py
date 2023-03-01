@@ -6,7 +6,7 @@ from .apis import ApiBase, Contacts, Locations, Employees, Accounts, ExpenseType
     APPayments, Reimbursements, CheckingAccounts, SavingsAccounts, Tasks, ExpensePaymentTypes, Dimensions,\
     DimensionValues, LocationEntities, ARInvoices, TaxDetails, GLDetail, Classes, JournalEntries,\
     ChargeCardTransactionEntry, GLEntries, GLAcctGrpHier, GLBudgetItem, AuditHistory, OtherReceipts,\
-    OtherReceiptEntry
+    OtherReceiptsEntry
   
 class SageIntacctSDK:
     """
@@ -68,7 +68,7 @@ class SageIntacctSDK:
         self.journal_entries = JournalEntries()
         self.audit_history = AuditHistory()
         self.other_receipts = OtherReceipts()
-        self.other_receipt_entry = OtherReceiptEntry()
+        self.other_receipts_entry = OtherReceiptEntry()
         self.update_sender_id()
         self.update_sender_password()
         self.update_session_id()
@@ -115,7 +115,7 @@ class SageIntacctSDK:
         self.journal_entries.set_sender_id(self.__sender_id)
         self.audit_history.set_sender_id(self.__sender_id)
         self.other_receipts.set_sender_id(self.__sender_id)
-        self.other_receipt_entry.set_sender_id(self.__sender_id)
+        self.other_receipts_entry.set_sender_id(self.__sender_id)
 
 
 
@@ -159,7 +159,7 @@ class SageIntacctSDK:
         self.journal_entries.set_sender_password(self.__sender_password)
         self.audit_history.set_sender_password(self.__sender_password)
         self.other_receipts.set_sender_password(self.__sender_password)
-        self.other_receipt_entry.set_sender_password(self.__sender_password)
+        self.other_receipts_entry.set_sender_password(self.__sender_password)
 
 
     def update_session_id(self):
@@ -204,5 +204,5 @@ class SageIntacctSDK:
         self.journal_entries.set_session_id(self.__session_id)
         self.audit_history.set_session_id(self.__session_id)
         self.other_receipts.set_session_id(self.__session_id)
-        self.other_receipt_entry.set_session_id(self.__session_id)
+        self.other_receipts_entry.set_session_id(self.__session_id)
         
