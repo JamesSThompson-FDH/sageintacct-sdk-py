@@ -375,7 +375,7 @@ class ApiBase:
         count = self.count()
         pagesize = self.__pagesize
         for offset in range(0, count, pagesize):
-            print(count, " of ",  offset)
+            print(offset, " of ",  count)
             data = {
                 'query': {
                     'object': self.__dimension,
