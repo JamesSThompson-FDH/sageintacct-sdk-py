@@ -36,6 +36,7 @@ from .gl_budget_item import GLBudgetItem
 from .classes import Classes
 from .journal_entries import JournalEntries
 from .audit_history import AuditHistory
+from .other_receipts import OtherReceipts
 
 __all__ = [
     'ApiBase',
@@ -72,5 +73,6 @@ __all__ = [
     'GLBudgetItem',
     'Classes',
     'JournalEntries',
-    'AuditHistory'
+    'AuditHistory',
+    'OtherReceipts'
 ]
