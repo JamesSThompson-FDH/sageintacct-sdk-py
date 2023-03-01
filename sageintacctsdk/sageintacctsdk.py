@@ -68,7 +68,7 @@ class SageIntacctSDK:
         self.journal_entries = JournalEntries()
         self.audit_history = AuditHistory()
         self.other_receipts = OtherReceipts()
-        self.other_receipts_entry = OtherReceiptEntry()
+        self.other_receipts_entry = OtherReceiptsEntry()
         self.update_sender_id()
         self.update_sender_password()
         self.update_session_id()
