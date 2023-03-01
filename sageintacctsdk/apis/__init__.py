@@ -37,7 +37,7 @@ from .classes import Classes
 from .journal_entries import JournalEntries
 from .audit_history import AuditHistory
 from .other_receipts import OtherReceipts
-from .other_receipt_entry import OtherReceiptEntry
+from .other_receipts_entry import OtherReceiptsEntry
 
 __all__ = [
     'ApiBase',
@@ -76,5 +76,5 @@ __all__ = [
     'JournalEntries',
     'AuditHistory',
     'OtherReceipts',
-    'OtherReceiptEntry'
+    'OtherReceiptsEntry'
 ]
